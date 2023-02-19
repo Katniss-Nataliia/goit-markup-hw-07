@@ -174,9 +174,14 @@ header{
     padding-bottom: 200px;
     background-position: center;
 }
+.hero-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 .hero-container__title {
-    /* color: var(--main-heading-color) */
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -205,8 +210,8 @@ header{
    
 }
 
-.request-our-service-button:hover,
-.request-our-service-button:focus{
+.hero-section__request-service-bttn:hover,
+.hero-section__request-service-bttn:focus{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     background-color: var(--request-our-service-hover-color);
 }
@@ -257,12 +262,7 @@ header{
 
 
 
-.hero-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+
 
 .contact-form{
     padding-left: 40px;
@@ -501,7 +501,7 @@ header{
     background-color: var(--transparent-grey-color);
     bottom: 0;
 }
-.desktop-apps-container > p{
+.products__name > p{
     color: var(--main-heading-color);
     font-weight: 700;
     font-size: 14px;
@@ -628,6 +628,7 @@ header{
 
 
 /* MARK - footer styling */
+
 .footer{
     background-color: var(--footer-bg-color);
     padding-top: 60px;
@@ -643,7 +644,7 @@ header{
     font-style: normal;
 }
 
-.logo--footer{
+.logo-footer{
     color: var(--webstudio-color);
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
@@ -662,7 +663,7 @@ header{
     color: var(--contact-info-footer);
     transition: color var(--time) var(--time-function);
 }
-.address > li{
+.address__item{
     margin-bottom: 2px;
 }
 
