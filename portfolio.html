@@ -13,38 +13,40 @@
   </head>
   <body>
     <header>
-      <div class="header-container container">
-        <a href="index.html" class="webstudio-link">WebStudio</a>
+      <div class="header container">
+        <a href="index.html" class="logo">WebStudio</a>
         <nav>
           <!-- Navigation to other pages -->
 
-          <ul class="menu">
-            <li><a href="index.html" class="menu-item studio">Studio</a></li>
-            <li class="active-link">
+          <ul class="nav">
+            <li class="nav__item">
+              <a href="index.html" class="nav__link">Studio</a>
+            </li>
+            <li class="nav__item active-link">
               <a
                 href="portfolio.html"
                 rel="noopener norefer"
-                class="menu-item portfolio nav-link-current"
+                class="nav__link nav__link--active"
                 >Portfolio</a
               >
             </li>
-            <li>
-              <a href="index.html" class="menu-item contacts">Contacts</a>
+            <li class="nav__item">
+              <a href="index.html" class="nav__link">Contacts</a>
             </li>
           </ul>
         </nav>
-        <ul class="contact-info">
-          <li>
-            <a href="mailto:info@devstudio.com" class="contact-detail email">
-              <svg width="16" height="12" class="contact-icon">
+         <ul class="contacts">
+          <li class="contacts__item">
+            <a href="mailto:info@devstudio.com" class="contacts__link">
+              <svg width="16" height="12" class="contacts__icon">
                 <use href="./images/symbol-defs.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li>
-            <a href="tel:+12127724150" class="contact-detail phone-number">
-              <svg width="10" height="16" class="contact-icon">
+          <li class="contacts__item">
+            <a href="tel:+12127724150" class="contacts__link">
+              <svg width="10" height="16" class="contacts__icon">
                 <use href="./images/symbol-defs.svg#icon-phone"></use>
               </svg>
               +12127724150</a
@@ -55,21 +57,19 @@
     </header>
 
     <main>
-      <section class="section">
+      <section class="section portfolio-section">
         <div class="container">
-          <ul class="button-choices">
-            <li><button type="button" class="button-item">All</button></li>
-            <li><button type="button" class="button-item">Web-site</button></li>
-            <li><button type="button" class="button-item">Apps</button></li>
-            <li><button type="button" class="button-item">Design</button></li>
-            <li>
-              <button type="button" class="button-item">Marketing</button>
-            </li>
+          <ul class="web-pages">
+            <li class="web-pages__item"><button type="button" class="web-pages__bttn">All</button></li>
+            <li class="web-pages__item"><button type="button" class="web-pages__bttn">Web-site</button></li>
+            <li class="web-pages__item"><button type="button" class="web-pages__bttn">Apps</button></li>
+            <li class="web-pages__item"><button type="button" class="web-pages__bttn">Design</button></li>
+            <li class="web-pages__item"><button type="button" class="web-pages__bttn">Marketing</button></li>
           </ul>
-          <h2 class="portfolio-projects-title">Portfolio Projects</h2>
-          <ul class="projects">
-            <li>
-              <div class="overflow-block">
+          <h2 class="portfolio-section__title">Portfolio Projects</h2>
+          <ul class="portfolio-projects">
+            <li class="portfolio-projects__item">
+              <div class="portfolio_projects__overflow-block">
                 <img
                   src="images/laptop.jpg"
                   alt="laptop image"
@@ -77,20 +77,20 @@
                   height="294"
                 />
                 <div class="overlay">
-                  <p>
+                  <p class="overlay__text">
                     Technoduck is a state-of-the-art coronavirus distribution
                     platform. Companies use this platform for digital espionage
                     and attacks on competitors' secure servers.
                   </p>
                 </div>
               </div>
-              <div class="grey-border-box">
-                <h3 class="project-example">Technoduck</h3>
-                <p class="project-title">Web-site</p>
+              <div class="project-naming">
+                <h3 class="project-naming__example">Technoduck</h3>
+                <p class="project-naming__type">Web-site</p>
               </div>
             </li>
-            <li>
-              <div class="overflow-block">
+            <li class="portfolio-projects__item">
+              <div class="portfolio_projects__overflow-block">
                 <img
                   src="images/basketballplayers.jpg"
                   alt="basketball players"
@@ -98,22 +98,22 @@
                   height="294"
                 />
                 <div class="overlay">
-                  <p>
+                  <p class="overlay__text">
                     Technoduck is a state-of-the-art coronavirus distribution
                     platform. Companies use this platform for digital espionage
                     and attacks on competitors' secure servers.
                   </p>
                 </div>
               </div>
-              <div class="grey-border-box">
-                <h3 class="project-example">
+              <div class="project-naming">
+                <h3 class="project-naming__example">
                   Poster New Orlean vs Golden Star
                 </h3>
-                <p class="project-title">Design</p>
+                <p class="project-naming__type">Design</p>
               </div>
             </li>
-            <li>
-              <div class="overflow-block">
+            <li class="portfolio-projects__item">
+              <div class="portfolio_projects__overflow-block">
                 <img
                   src="images/seafood.jpg"
                   alt="seafood"
@@ -122,20 +122,20 @@
                 />
 
                 <div class="overlay">
-                  <p>
+                  <p class="overlay__text">
                     Technoduck is a state-of-the-art coronavirus distribution
                     platform. Companies use this platform for digital espionage
                     and attacks on competitors' secure servers.
                   </p>
                 </div>
               </div>
-              <div class="grey-border-box">
-                <h3 class="project-example">Seafood Restaurant</h3>
-                <p class="project-title">App</p>
+              <div class="project-naming">
+                <h3 class="project-naming__example">Seafood Restaurant</h3>
+                <p class="project-naming__type">App</p>
               </div>
             </li>
-            <li>
-              <div class="overflow-block">
+            <li class="portfolio-projects__item">
+              <div class="portfolio_projects__overflow-block">
                 <img
                   src="images/headphones.jpg"
                   alt="headphones"
@@ -143,20 +143,20 @@
                   height="294"
                 />
                 <div class="overlay">
-                  <p>
+                  <p class="overlay__text">
                     Technoduck is a state-of-the-art coronavirus distribution
                     platform. Companies use this platform for digital espionage
                     and attacks on competitors' secure servers.
                   </p>
                 </div>
               </div>
-              <div class="grey-border-box">
-                <h3 class="project-example">Project Prime</h3>
-                <p class="project-title">Marketing</p>
+              <div class="project-naming">
+                <h3 class="project-naming__example">Project Prime</h3>
+                <p class="project-naming__type">Marketing</p>
               </div>
             </li>
-            <li>
-              <div class="overflow-block">
+            <li class="portfolio-projects__item">
+              <div class="portfolio_projects__overflow-block">
                 <img
                   src="images/projectBoxes.jpg"
                   alt="laptop image"
@@ -164,20 +164,20 @@
                   height="294"
                 />
                 <div class="overlay">
-                  <p>
+                  <p class="overlay__text">
                     Technoduck is a state-of-the-art coronavirus distribution
                     platform. Companies use this platform for digital espionage
                     and attacks on competitors' secure servers.
                   </p>
                 </div>
               </div>
-              <div class="grey-border-box">
-                <h3 class="project-example">Project Boxes</h3>
-                <p class="project-title">Apps</p>
+              <div class="project-naming">
+                <h3 class="project-naming__example">Project Boxes</h3>
+                <p class="project-naming__type">Apps</p>
               </div>
             </li>
-            <li>
-              <div class="overflow-block">
+            <li class="portfolio-projects__item">
+              <div class="portfolio_projects__overflow-block">
                 <img
                   src="images/monitor.jpg"
                   alt="monitor"
@@ -185,20 +185,20 @@
                   height="294"
                 />
                 <div class="overlay">
-                  <p>
+                  <p class="overlay__text">
                     Technoduck is a state-of-the-art coronavirus distribution
                     platform. Companies use this platform for digital espionage
                     and attacks on competitors' secure servers.
                   </p>
                 </div>
               </div>
-              <div class="grey-border-box">
-                <h3 class="project-example">Inspiration has no Borders</h3>
-                <p class="project-title">Web-site</p>
+              <div class="project-naming">
+                <h3 class="project-naming__example">Inspiration has no Borders</h3>
+                <p class="project-naming__type">Web-site</p>
               </div>
             </li>
-            <li>
-              <div class="overflow-block">
+            <li class="portfolio-projects__item">
+              <div class="portfolio_projects__overflow-block">
                 <img
                   src="images/magazine.jpg"
                   alt="magazine"
@@ -206,20 +206,20 @@
                   height="294"
                 />
                 <div class="overlay">
-                  <p>
+                  <p class="overlay__text">
                     Technoduck is a state-of-the-art coronavirus distribution
                     platform. Companies use this platform for digital espionage
                     and attacks on competitors' secure servers.
                   </p>
                 </div>
               </div>
-              <div class="grey-border-box">
-                <h3 class="project-example">Limited Edition</h3>
-                <p class="project-title">Design</p>
+              <div class="project-naming">
+                <h3 class="project-naming__example">Limited Edition</h3>
+                <p class="project-naming__type">Design</p>
               </div>
             </li>
-            <li>
-              <div class="overflow-block">
+            <li class="portfolio-projects__item">
+              <div class="portfolio_projects__overflow-block">
                 <img
                   src="images/labelTag.jpg"
                   alt="lable tag"
@@ -227,20 +227,20 @@
                   height="294"
                 />
                 <div class="overlay">
-                  <p>
+                  <p class="overlay__text">
                     Technoduck is a state-of-the-art coronavirus distribution
                     platform. Companies use this platform for digital espionage
                     and attacks on competitors' secure servers.
                   </p>
                 </div>
               </div>
-              <div class="grey-border-box">
-                <h3 class="project-example">Project LAB</h3>
-                <p class="project-title">Marketing</p>
+              <div class="project-naming">
+                <h3 class="project-naming__example">Project LAB</h3>
+                <p class="project-naming__type">Marketing</p>
               </div>
             </li>
-            <li>
-              <div class="overflow-block">
+            <li class="portfolio-projects__item">
+              <div class="portfolio_projects__overflow-block">
                 <img
                   src="images/typingOnTheLaptop.jpg"
                   alt="typing on the laptop"
@@ -248,16 +248,16 @@
                   height="294"
                 />
                 <div class="overlay">
-                  <p>
+                  <p class="overlay__text">
                     Technoduck is a state-of-the-art coronavirus distribution
                     platform. Companies use this platform for digital espionage
                     and attacks on competitors' secure servers.
                   </p>
                 </div>
               </div>
-              <div class="grey-border-box">
-                <h3 class="project-example">Growing Business</h3>
-                <p class="project-title">Apps</p>
+              <div class="project-naming">
+                <h3 class="project-naming__example">Growing Business</h3>
+                <p class="project-naming__type">Apps</p>
               </div>
             </li>
           </ul>
@@ -267,78 +267,83 @@
 
     <footer class="footer">
       <div class="container footer-global-container">
-        <div class="footer-container-one">
-          <a href="index.html" class="webstudio-link-footer">WebStudio</a>
+        <div class="webstudio-address">
+          <a href="index.html" class="logo logo--footer">WebStudio</a>
           <address>
-            <ul class="address-footer">
-              <li>
-                <a href="https://goo.gl/maps/vmdEabcFhvJnFiz56" class="address"
+            <ul class="address">
+              <li class="address__item">
+                <a href="https://goo.gl/maps/vmdEabcFhvJnFiz56" class="address__link"
                   >695 Park Ave, New York, NY 10065, <br />
                   United States</a
                 >
               </li>
-              <li>
+              <li class="address__item">
                 <a
                   href="mailto:info@devstudio.com"
-                  class="contact-detail-footer email-footer"
+                  class="address__contact"
                   >info@devstudio.com</a
                 >
               </li>
-              <li>
+              <li class="address__item">
                 <a
                   href="tel:+12127724150"
-                  class="contact-detail-footer phone-footer"
+                  class="address__contact"
                   >+12127724150</a
                 >
               </li>
             </ul>
           </address>
         </div>
-        <div class="find-us-container">
-          <p class="find-is-on-title">FIND US ON</p>
-          <ul class="company-social-link-icons">
-            <li>
-              <a href="" class="social-icon-link-svg">
-                <svg width="20" height="20" class="svg-social-media-icon">
+        <div class="find-us">
+          <p class="find-us__title">FIND US ON</p>
+          <ul class="social-media">
+            <li class="social-media__item">
+              <a href="" class="social-media__link">
+                <svg width="20" height="20" class="social-media__svg">
                   <use href="./images/symbol-defs.svg#icon-instagram-2"></use>
                 </svg>
               </a>
             </li>
-
-            <li>
-              <a href="" class="social-icon-link-svg">
-                <svg width="20" height="20" class="svg-social-media-icon">
+            <li class="social-media__item">
+              <a href="" class="social-media__link">
+                <svg width="20" height="20" class="social-media__svg">
                   <use href="./images/symbol-defs.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a href="" class="social-icon-link-svg">
-                <svg width="20" height="20" class="svg-social-media-icon">
+            <li class="social-media__item">
+              <a href="" class="social-media__link">
+                <svg width="20" height="20" class="social-media__svg">
                   <use href="./images/symbol-defs.svg#icon-facebook-1"></use>
                 </svg>
               </a>
             </li>
-            <li class="last-child">
-              <a href="" class="social-icon-link-svg">
-                <svg width="20" height="20" class="svg-social-media-icon">
+            <li class="social-media__item">
+              <a href="" class="social-media__link">
+                <svg width="20" height="20" class="social-media__svg">
                   <use href="./images/symbol-defs.svg#icon-linkedin-1"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-      <div class="subscribe-container">
-          <p>Subscribe to the newsletter</p>
-          <form name="subscribe-form" class="subscribe-form-class">
-            <input type="email" name="email-input" placeholder="E-mail" class="email-input-element">
-            <button type="button" class="subscribe-btn">Subscribe
-              <svg width="24" height="24" class="subscribe-twitter-svg">
+        <div class="subscribe">
+          <p class="subscribe__title">Subscribe to the newsletter</p>
+          <form name="subscribe-form" class="subscribe-form">
+            <input
+              type="email"
+              name="email-input"
+              placeholder="E-mail"
+              class="subscribe-form__input-email"
+            />
+            <button type="submit" class="subscribe-form__btn">
+              Subscribe
+              <svg width="24" height="24" class="subscribe-form__svg">
                 <use href="./images/symbol-defs.svg#icon-twitter-icon"></use>
               </svg>
             </button>
           </form>
-      </div>
+        </div>
       </div>
     </footer>
   </body>
